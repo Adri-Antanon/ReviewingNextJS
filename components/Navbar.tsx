@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ActiveLink from './ActiveLink';
 
 type ItemNavbar = {
   link: string;
@@ -20,9 +21,7 @@ export default function Navbar() {
   return (
     <nav>
       {itemsNavbar.map((item) => (
-        <Link href={item.link} key={item.link}>
-          {item.text}
-        </Link>
+        <ActiveLink link={item.link} text={item.text} key={item.link} />
       ))}
     </nav>
   );
