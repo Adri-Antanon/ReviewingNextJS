@@ -2,6 +2,7 @@ import styles from '../styles/Home.module.css';
 import { Inter } from '@next/font/google';
 import Link from 'next/link';
 import Head from 'next/head';
+import Navbar from '../components/Navbar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -14,6 +15,7 @@ export default function About() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar />
       <main className={styles.main}>
         <div className={styles.center}>
           <Link href="/" className={styles.card}>
