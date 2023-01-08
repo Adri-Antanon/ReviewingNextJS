@@ -16,41 +16,38 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.tsx</code>
-          </p>
-          <div>
-            <Link
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </Link>
-          </div>
-        </div>
-
-        <div className={styles.center}>
-          <Link href="/about" className={styles.card}>
-            <h2 className={inter.className}>
-              About <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>Nuevo componente</p>
+      <div className={styles.description}>
+        <p>
+          Get started by editing&nbsp;
+          <code className={styles.code}>pages/index.tsx</code>
+        </p>
+        <div>
+          <Link
+            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            By{' '}
+            <Image
+              src="/vercel.svg"
+              alt="Vercel Logo"
+              className={styles.vercelLogo}
+              width={100}
+              height={24}
+              priority
+            />
           </Link>
         </div>
-      </main>
+      </div>
+
+      <div className={styles.center}>
+        <Link href="/about" className={styles.card}>
+          <h2 className={inter.className}>
+            About <span>-&gt;</span>
+          </h2>
+          <p className={inter.className}>Nuevo componente</p>
+        </Link>
+      </div>
     </>
   );
 }

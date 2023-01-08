@@ -15,17 +15,15 @@ export default function About() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
-      <main className={styles.main}>
-        <div className={styles.center}>
-          <Link href="/" className={styles.card}>
-            <h2 className={inter.className}>
-              Home <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>Contact component</p>
-          </Link>
-        </div>
-      </main>
+
+      <div className={styles.center}>
+        <Link href="/" className={styles.card}>
+          <h2 className={inter.className}>
+            Home <span>-&gt;</span>
+          </h2>
+          <p className={inter.className}>Contact component</p>
+        </Link>
+      </div>
     </>
   );
 }
