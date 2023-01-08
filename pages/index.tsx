@@ -4,12 +4,13 @@ import { Inter } from '@next/font/google';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import Navbar from '../components/Navbar';
+import Layout from '../components/layouts/MainLayout';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
-    <>
+    <Layout>
       <Head>
         <title>Home - Adri</title>
         <meta name="description" content="Home page" />
@@ -48,6 +49,6 @@ export default function Home() {
           <p className={inter.className}>Nuevo componente</p>
         </Link>
       </div>
-    </>
+    </Layout>
   );
 }

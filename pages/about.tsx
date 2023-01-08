@@ -1,7 +1,12 @@
-import styles from '../styles/Home.module.css';
-import { Inter } from '@next/font/google';
 import Link from 'next/link';
 import Head from 'next/head';
+import { Inter } from '@next/font/google';
+import { ReactElement } from 'react';
+
+import DarkLayout from '../components/layouts/DarkLayout';
+
+import styles from '../styles/Home.module.css';
+import Layout from '../components/layouts/MainLayout';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -25,3 +30,11 @@ export default function About() {
     </>
   );
 }
+
+About.getLayout = function getLayout(page: ReactElement) {
+  return (
+    <Layout>
+      <DarkLayout>{page}</DarkLayout>
+    </Layout>
+  );
+};
